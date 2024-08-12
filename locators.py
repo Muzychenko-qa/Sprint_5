@@ -32,4 +32,8 @@ class StellarBurgersLocators:
     BURGER_BUN_H2 = (By.XPATH, "//section/div/h2[1]")  # Текст ингридиента из раздела Булки
     BURGER_SAUCE_TEXT = (By.XPATH, "//p[text()='Соус с шипами Антарианского плоскоходца']")  # Текст ингридиента из раздела Соусы
 
-    CONSTRUCTOR_ACTIVE_TAB = (By.XPATH, "//div[@class='tab_tab__1SPyG tab_tab_type_current__2BEPc pt-4 pr-10 pb-4 pl-10 noselect']")
+    BREAD_SECTION = (By.XPATH, "//section/div/div[1]/span")  # Секция "Булки"
+    SAUCES_SECTION = (By.XPATH, "//section/div/div[2]/span")  # Секция "Соусы"
+    DIPS_SECTION = (By.XPATH, "//section/div/div[3]/span")  # Секция "Начинки"
+    CONSTRUCTOR_ACTIVE_TAB = (By.XPATH, "//div[contains(@class, 'tab_tab_type_current')]")
+
